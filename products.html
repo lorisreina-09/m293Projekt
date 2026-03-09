@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Athletics | Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">IRON<span>FORGE</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Shop</a></li>
+                    <li><a href="contact.html">Team & Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="container section-padding">
+        <h2 class="section-title">UNSERE PRODUKTE</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Alle</button>
+            <button class="filter-btn" data-filter="supplements">Supplements</button>
+            <button class="filter-btn" data-filter="gear">Equipment</button>
+            <button class="filter-btn" data-filter="wear">Kleidung</button>
+        </div>
+
+        <!-- Produkt Grid (wird per JS gefüllt) -->
+        <div id="product-grid" class="product-grid">
+            <!-- Produkte werden hier geladen -->
+        </div>
+    </section>
+
+    <!-- Produkt Detail Modal (Popup) -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Produktbild">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Produkt Name</h2>
+                    <p id="modal-category" class="highlight-text">Kategorie</p>
+                    <p id="modal-desc">Beschreibung hier...</p>
+                    <h3 id="modal-price">0.00 CHF</h3>
+                    
+                    <!-- Video Platzhalter (Anforderung aus Auftrag) -->
+                    <div class="video-container">
+                        <p style="margin-bottom:5px; font-size:0.9rem; color:#888;">Produkt-Video:</p>
+                        <video controls width="100%" poster="https://placehold.co/600x340/000/fff?text=Video+Preview">
+                            <source src="movie.mp4" type="video/mp4">
+                            Dein Browser unterstützt das Video-Tag nicht.
+                        </video>
+                    </div>
+
+                    <button id="add-to-cart-btn" class="btn btn-primary">IN DEN WARENKORB</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IronForge Athletics. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

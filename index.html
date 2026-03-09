@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Athletics | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">IRON<span>FORGE</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="contact.html">Team & Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SCHMIEDE DEINEN KÖRPER</h1>
+            <p>Professionelles Equipment und Supplements für echte Athleten.</p>
+            <a href="products.html" class="btn btn-primary">JETZT EINKAUFEN</a>
+        </div>
+    </section>
+
+    <!-- Kategorien Übersicht -->
+    <section class="container section-padding">
+        <h2 class="section-title">UNSERE KATEGORIEN</h2>
+        <div class="category-grid">
+            <div class="cat-card">
+                <h3>SUPPLEMENTS</h3>
+                <p>Maximale Leistung & Regeneration</p>
+            </div>
+            <div class="cat-card">
+                <h3>GEAR</h3>
+                <p>Hanteln, Bänke & Zubehör</p>
+            </div>
+            <div class="cat-card">
+                <h3>WEAR</h3>
+                <p>Funktionskleidung für Profis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section-padding">
+        <div class="container">
+            <h2>BLEIB INFORMIERT</h2>
+            <p>Melde dich an für exklusive Rabatte und Trainingstipps.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Danke für die Anmeldung!');">
+                <input type="email" placeholder="Deine E-Mail Adresse" required>
+                <button type="submit" class="btn btn-secondary">ANMELDEN</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IronForge Athletics. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

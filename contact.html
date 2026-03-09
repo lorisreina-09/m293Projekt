@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Athletics | Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">IRON<span>FORGE</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="contact.html" class="active">Team & Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section class="container section-padding">
+        <h2 class="section-title">UNSERE ATHLETEN</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Max');"></div>
+                <h3>Max Power</h3>
+                <p>Bodybuilding Pro</p>
+            </div>
+            <div class="team-card">
+                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Sarah');"></div>
+                <h3>Sarah Strong</h3>
+                <p>CrossFit Champion</p>
+            </div>
+            <div class="team-card">
+                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Tom');"></div>
+                <h3>Tom Lift</h3>
+                <p>Powerlifting Coach</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section class="container section-padding">
+        <div class="contact-wrapper">
+            <h2 class="section-title">KONTAKTIERE UNS</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Betreff</label>
+                    <!-- WICHTIG: Dropdown wie gefordert -->
+                    <select id="subject" required>
+                        <option value="" disabled selected>Bitte wählen...</option>
+                        <option value="Bestellung">Frage zur Bestellung</option>
+                        <option value="Produktberatung">Produktberatung</option>
+                        <option value="Rücksendung">Rücksendung</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">NACHRICHT SENDEN</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IronForge Athletics. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
