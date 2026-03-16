@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGACY GYM | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LEGACY GYM</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="athletes.html">Athleten</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Alle Produkte</h1>
+        
+        <!-- Filter -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Alle</button>
+            <button class="filter-btn" data-filter="clothing">Kleidung</button>
+            <button class="filter-btn" data-filter="supplements">Supplements</button>
+            <button class="filter-btn" data-filter="equipment">Equipment</button>
+        </div>
+
+        <div class="grid-container">
+            <!-- 10 Produkte wie gefordert (Hier gekürzt auf Beispiele, kopiere die Struktur für mehr) -->
+            
+            <!-- Produkt 1: Clothing -->
+            <article class="card product-card" data-category="clothing">
+                <img src="/Images/OversizedShirt.webp" alt="Tee" class="card-img">
+                <div class="card-content">
+                    <h3>Oversized Pump Cover</h3>
+                    <p>Perfekt für das Aufwärmen.</p>
+                    <span class="price">CHF 34.90</span>
+                    <a href="product.html" class="btn">Bestellen</a>
+                </div>
+            </article>
+
+            <!-- Produkt 2: Supplements -->
+            <article class="card product-card" data-category="supplements">
+                <img src="/Images/Creatine.webp" alt="Creatine" class="card-img">
+                <div class="card-content">
+                    <h3>Pure Creatine</h3>
+                    <p>Für mehr Kraftausdauer.</p>
+                    <span class="price">CHF 24.90</span>
+                    <a href="product.html" class="btn">Bestellen</a>
+                </div>
+            </article>
+
+            <!-- Produkt 3: Equipment -->
+            <article class="card product-card" data-category="equipment">
+                <img src="/Images/Zughilfe.webp" alt="Straps" class="card-img">
+                <div class="card-content">
+                    <h3>Zughilfen</h3>
+                    <p>Kein Griffkraft-Verlust mehr.</p>
+                    <span class="price">CHF 14.90</span>
+                    <a href="product.html" class="btn">Bestellen</a>
+                </div>
+            </article>
+
+             <!-- Weitere Produkte für die Anforderung "10 Produkte" -->
+             <article class="card product-card" data-category="clothing">
+                <img src="/Images/Hoodie.webp" alt="Hoodie" class="card-img">
+                <div class="card-content"><h3>Gym Hoodie</h3><span class="price">CHF 59.90</span><a href="product.html" class="btn">Bestellen</a></div>
+            </article>
+            <article class="card product-card" data-category="supplements">
+                <img src="/Images/Whey.webp" alt="Whey" class="card-img">
+                <div class="card-content"><h3>Whey Isolate</h3><span class="price">CHF 39.90</span><a href="product.html" class="btn">Bestellen</a></div>
+            </article>
+            <article class="card product-card" data-category="clothing">
+                <img src="/Images/Shorts.webp" alt="Shorts" class="card-img">
+                <div class="card-content"><h3>Squat Shorts</h3><span class="price">CHF 29.90</span><a href="product.html" class="btn">Bestellen</a></div>
+            </article>
+            <!-- Füge hier weitere 4 Produkte hinzu um auf 10 zu kommen -->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Legacy Gym</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGACY GYM | Produktdetails</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        @media(max-width: 768px) { .product-detail-grid { grid-template-columns: 1fr; } }
+        .video-container { margin-top: 2rem; }
+        iframe { width: 100%; aspect-ratio: 16/9; border: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">LEGACY GYM</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="athletes.html">Athleten</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-detail-grid">
+            <!-- Linke Seite: Bild & Video -->
+            <div>
+                <img src="https://placehold.co/600x600/333/FFF?text=Produktbild" alt="Produkt Detail" style="width:100%; border: 1px solid #333;">
+                
+                <div class="video-container">
+                    <h3>Produkt Video</h3>
+                    <!-- Dummy Video Embed -->
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1" title="Product Video"></iframe>
+                </div>
+            </div>
+
+            <!-- Rechte Seite: Info & Bestellung -->
+            <div>
+                <h1>CBUM Pre-Workout</h1>
+                <p class="price" style="font-size: 2rem; margin-bottom: 1rem;">CHF 49.90</p>
+                
+                <p>Erlebe maximalen Fokus und Pump. Entwickelt von Chris Bumstead persönlich für die härtesten Trainingseinheiten. Enthält Citrullin, Beta-Alanin und Koffein.</p>
+                
+                <ul style="margin: 1rem 0 2rem 1rem; list-style: disc;">
+                    <li>Geschmack: Blackberry Lemonade</li>
+                    <li>Portionen: 40 Scoops</li>
+                    <li>Vegan & Glutenfrei</li>
+                </ul>
+
+                <hr style="border-color: #333; margin-bottom: 2rem;">
+
+                <h3>Jetzt Bestellen</h3>
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="amount">Menge</label>
+                        <input type="number" id="amount" value="1" min="1" max="10" style="width: 80px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Dein Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Lieferadresse</label>
+                        <textarea id="address" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Kostenpflichtig bestellen</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Legacy Gym</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

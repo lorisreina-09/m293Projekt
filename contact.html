@@ -3,88 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronForge Athletics | Kontakt</title>
+    <title>LEGACY GYM | Kontakt</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container nav-container">
-            <div class="logo">IRON<span>FORGE</span></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Shop</a></li>
-                    <li><a href="contact.html" class="active">Team & Kontakt</a></li>
-                </ul>
-            </nav>
-            <div class="cart-icon">
-                🛒 <span id="cart-count">0</span>
-            </div>
-        </div>
+        <nav>
+            <div class="logo">LEGACY GYM</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="athletes.html">Athleten</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Team Section -->
-    <section class="container section-padding">
-        <h2 class="section-title">UNSERE ATHLETEN</h2>
-        <div class="team-grid">
-            <div class="team-card">
-                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Max');"></div>
-                <h3>Max Power</h3>
-                <p>Bodybuilding Pro</p>
+    <main>
+        <h1>Kontakt & Team</h1>
+        
+        <div class="grid-container" style="grid-template-columns: 1fr 1fr;">
+            <!-- Kontaktformular -->
+            <div>
+                <h2>Schreib uns</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="c-name">Name</label>
+                        <input type="text" id="c-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">E-Mail</label>
+                        <input type="email" id="c-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-subject">Betreff</label>
+                        <select id="c-subject" required>
+                            <option value="" disabled selected>Bitte wählen...</option>
+                            <option value="order">Frage zur Bestellung</option>
+                            <option value="product">Produktinformationen</option>
+                            <option value="collab">Kooperation / Sponsoring</option>
+                            <option value="other">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-msg">Nachricht</label>
+                        <textarea id="c-msg" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
             </div>
-            <div class="team-card">
-                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Sarah');"></div>
-                <h3>Sarah Strong</h3>
-                <p>CrossFit Champion</p>
-            </div>
-            <div class="team-card">
-                <div class="team-img" style="background-image: url('https://placehold.co/400x400/222/e0ff00?text=Tom');"></div>
-                <h3>Tom Lift</h3>
-                <p>Powerlifting Coach</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Kontaktformular -->
-    <section class="container section-padding">
-        <div class="contact-wrapper">
-            <h2 class="section-title">KONTAKTIERE UNS</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Betreff</label>
-                    <!-- WICHTIG: Dropdown wie gefordert -->
-                    <select id="subject" required>
-                        <option value="" disabled selected>Bitte wählen...</option>
-                        <option value="Bestellung">Frage zur Bestellung</option>
-                        <option value="Produktberatung">Produktberatung</option>
-                        <option value="Rücksendung">Rücksendung</option>
-                        <option value="Sonstiges">Sonstiges</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">NACHRICHT SENDEN</button>
-            </form>
+            <!-- Team Info -->
+            <div>
+                <h2>Unser Team</h2>
+                <p>Wir sind ein Team aus passionierten Sportlern und Entwicklern.</p>
+                <br>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Support:</strong><br>
+                        support@legacygym.ch<br>
+                        Mo-Fr: 09:00 - 17:00
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Standort:</strong><br>
+                        Musterstrasse 123<br>
+                        8000 Zürich
+                    </li>
+                </ul>
+                <br>
+                <h3>Unsere Athleten</h3>
+                <p>Schau dir unsere <a href="athletes.html" style="color: var(--primary-color); text-decoration: underline;">Athleten-Seite</a> an, um mehr über David, Sam und Chris zu erfahren.</p>
+            </div>
         </div>
-    </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 IronForge Athletics. Alle Rechte vorbehalten.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Legacy Gym</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
