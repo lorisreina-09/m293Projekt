@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEGACY GYM | Kontakt</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,9 @@
 <header>
     <nav>
         <div class="logo">LEGACY GYM</div>
-        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+        <button class="menu-toggle" aria-label="Menü öffnen">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="0" y1="1" x2="18" y2="1"/><line x1="0" y1="7" x2="18" y2="7"/><line x1="0" y1="13" x2="18" y2="13"/></svg>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
@@ -23,45 +26,46 @@
 
 <main>
     <div class="page-header">
+        <span class="eyebrow">Schreib uns</span>
         <h1>Kontakt</h1>
-        <p>Fragen, Feedback oder eine Kooperation? Schreib uns.</p>
+        <p>Fragen, Feedback oder eine Kooperation? Wir sind für dich da.</p>
     </div>
 
-    <div class="contact-grid">
-        <!-- Formular -->
-        <div>
-            <h2>Schreib uns</h2>
-            <form id="contact-form" style="margin-top: 1.5rem;">
-                <div class="form-group">
-                    <label for="c-name">Name</label>
-                    <input type="text" id="c-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="c-email">E-Mail</label>
-                    <input type="email" id="c-email" required>
-                </div>
-                <div class="form-group">
-                    <label for="c-subject">Betreff</label>
-                    <select id="c-subject" required>
-                        <option value="" disabled selected>Bitte wählen...</option>
-                        <option value="order">Frage zur Bestellung</option>
-                        <option value="product">Produktinformationen</option>
-                        <option value="collab">Kooperation / Sponsoring</option>
-                        <option value="other">Sonstiges</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="c-msg">Nachricht</label>
-                    <textarea id="c-msg" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Absenden</button>
-            </form>
-        </div>
+    <div class="contact-wrap">
+        <div class="contact-grid">
+            <!-- Formular -->
+            <div>
+                <h2 class="contact-form-title">Nachricht senden</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="c-name">Name</label>
+                        <input type="text" id="c-name" placeholder="Max Mustermann" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">E-Mail</label>
+                        <input type="email" id="c-email" placeholder="max@beispiel.ch" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-subject">Betreff</label>
+                        <select id="c-subject" required>
+                            <option value="" disabled selected>Bitte wählen...</option>
+                            <option value="order">Frage zur Bestellung</option>
+                            <option value="product">Produktinformationen</option>
+                            <option value="collab">Kooperation / Sponsoring</option>
+                            <option value="other">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-msg">Nachricht</label>
+                        <textarea id="c-msg" rows="5" placeholder="Deine Nachricht..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Absenden</button>
+                </form>
+            </div>
 
-        <!-- Kontaktinfos -->
-        <div>
-            <h2>Erreichbarkeit</h2>
-            <div style="margin-top: 1.5rem;">
+            <!-- Kontaktinfos -->
+            <div>
+                <h2 class="contact-form-title">Erreichbarkeit</h2>
                 <div class="info-block">
                     <strong>Support</strong>
                     <p>support@legacygym.ch</p>
@@ -74,7 +78,7 @@
                 </div>
                 <div class="info-block">
                     <strong>Athleten-Team</strong>
-                    <p>Erfahre mehr über David, Sam und Chris auf der <a href="athletes.html" style="color: var(--red);">Athleten-Seite</a>.</p>
+                    <p>Erfahre mehr über David, Sam und Chris auf der <a href="athletes.html" style="color: var(--red); font-weight: 600;">Athleten-Seite</a>.</p>
                 </div>
             </div>
         </div>
@@ -85,10 +89,10 @@
     <div class="footer-inner">
         <div class="footer-brand">
             <div class="logo">LEGACY GYM</div>
-            <p>Equipment und Kleidung für echte Legenden.</p>
+            <p>Premium Equipment und Kleidung für echte Legenden. Inspiriert von den Besten der Welt.</p>
         </div>
         <div class="footer-col">
-            <h4>Links</h4>
+            <h4>Navigation</h4>
             <a href="index.html">Home</a>
             <a href="shop.html">Shop</a>
             <a href="athletes.html">Athleten</a>
@@ -103,6 +107,7 @@
     </div>
     <div class="footer-bottom">
         <p>&copy; <span id="year"></span> Legacy Gym. Alle Rechte vorbehalten.</p>
+        <a href="contact.html">Kontakt</a>
     </div>
 </footer>
 

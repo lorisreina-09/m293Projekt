@@ -29,7 +29,6 @@ if (filterBtns.length) {
         });
     };
     filterBtns.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
-    // URL-Parameter lesen (z.B. shop.html?filter=clothing von der Startseite)
     const urlFilter = new URLSearchParams(location.search).get('filter');
     if (urlFilter) applyFilter(urlFilter);
 }
@@ -47,7 +46,21 @@ if (location.pathname.includes('product.html')) {
             document.getElementById('detail-desc').textContent = p.desc;
             document.title = 'LEGACY GYM | ' + p.name;
         } else {
-            document.querySelector('main').innerHTML = "<h1>Produkt nicht gefunden</h1><a href='shop.html' class='btn' style='margin-top:1rem;display:inline-block'>Zurück zum Shop</a>";
+            document.querySelector('main').innerHTML = "<div style='max-width:1200px;margin:0 auto;padding:5rem 2rem;text-align:center'><h1 style='font-family:Bebas Neue,sans-serif;font-size:3rem;margin-bottom:1rem'>Produkt nicht gefunden</h1><a href='shop.html' class='btn' style='display:inline-block'>Zurück zum Shop</a></div>";
         }
     }
 }
+
+// Scroll-Fade-In Animationen
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-in').forEach((el, i) => {
+    el.style.transitionDelay = (i % 4) * 0.08 + 's';
+    observer.observe(el);
+});

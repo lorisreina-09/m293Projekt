@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
+  <!-- Red left accent bar -->
+  <rect x="0" y="0" width="3" height="32" rx="1.5" fill="#e31b23"/>
+  <!-- Barbell: center bar -->
+  <rect x="9" y="15" width="14" height="2.5" rx="1.25" fill="#e31b23"/>
+  <!-- Barbell: left disc -->
+  <rect x="5" y="10.5" width="4.5" height="11" rx="2.25" fill="#e31b23"/>
+  <!-- Barbell: right disc -->
+  <rect x="22.5" y="10.5" width="4.5" height="11" rx="2.25" fill="#e31b23"/>
+</svg>
