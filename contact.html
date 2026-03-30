@@ -7,82 +7,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+
+<header>
+    <nav>
+        <div class="logo">LEGACY GYM</div>
+        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="athletes.html">Athleten</a></li>
+            <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="page-header">
+        <h1>Kontakt</h1>
+        <p>Fragen, Feedback oder eine Kooperation? Schreib uns.</p>
+    </div>
+
+    <div class="contact-grid">
+        <!-- Formular -->
+        <div>
+            <h2>Schreib uns</h2>
+            <form id="contact-form" style="margin-top: 1.5rem;">
+                <div class="form-group">
+                    <label for="c-name">Name</label>
+                    <input type="text" id="c-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-email">E-Mail</label>
+                    <input type="email" id="c-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="c-subject">Betreff</label>
+                    <select id="c-subject" required>
+                        <option value="" disabled selected>Bitte wählen...</option>
+                        <option value="order">Frage zur Bestellung</option>
+                        <option value="product">Produktinformationen</option>
+                        <option value="collab">Kooperation / Sponsoring</option>
+                        <option value="other">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="c-msg">Nachricht</label>
+                    <textarea id="c-msg" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Absenden</button>
+            </form>
+        </div>
+
+        <!-- Kontaktinfos -->
+        <div>
+            <h2>Erreichbarkeit</h2>
+            <div style="margin-top: 1.5rem;">
+                <div class="info-block">
+                    <strong>Support</strong>
+                    <p>support@legacygym.ch</p>
+                    <p>Mo–Fr: 09:00 – 17:00 Uhr</p>
+                </div>
+                <div class="info-block">
+                    <strong>Standort</strong>
+                    <p>Musterstrasse 123</p>
+                    <p>8000 Zürich, Schweiz</p>
+                </div>
+                <div class="info-block">
+                    <strong>Athleten-Team</strong>
+                    <p>Erfahre mehr über David, Sam und Chris auf der <a href="athletes.html" style="color: var(--red);">Athleten-Seite</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
             <div class="logo">LEGACY GYM</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="athletes.html">Athleten</a></li>
-                <li><a href="contact.html" class="active">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Kontakt & Team</h1>
-        
-        <div class="grid-container" style="grid-template-columns: 1fr 1fr;">
-            <!-- Kontaktformular -->
-            <div>
-                <h2>Schreib uns</h2>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="c-name">Name</label>
-                        <input type="text" id="c-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="c-email">E-Mail</label>
-                        <input type="email" id="c-email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="c-subject">Betreff</label>
-                        <select id="c-subject" required>
-                            <option value="" disabled selected>Bitte wählen...</option>
-                            <option value="order">Frage zur Bestellung</option>
-                            <option value="product">Produktinformationen</option>
-                            <option value="collab">Kooperation / Sponsoring</option>
-                            <option value="other">Sonstiges</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="c-msg">Nachricht</label>
-                        <textarea id="c-msg" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Absenden</button>
-                </form>
-            </div>
-
-            <!-- Team Info -->
-            <div>
-                <h2>Unser Team</h2>
-                <p>Wir sind ein Team aus passionierten Sportlern und Entwicklern.</p>
-                <br>
-                <ul style="list-style: none;">
-                    <li style="margin-bottom: 1rem;">
-                        <strong>Support:</strong><br>
-                        support@legacygym.ch<br>
-                        Mo-Fr: 09:00 - 17:00
-                    </li>
-                    <li style="margin-bottom: 1rem;">
-                        <strong>Standort:</strong><br>
-                        Musterstrasse 123<br>
-                        8000 Zürich
-                    </li>
-                </ul>
-                <br>
-                <h3>Unsere Athleten</h3>
-                <p>Schau dir unsere <a href="athletes.html" style="color: var(--primary-color); text-decoration: underline;">Athleten-Seite</a> an, um mehr über David, Sam und Chris zu erfahren.</p>
-            </div>
+            <p>Equipment und Kleidung für echte Legenden.</p>
         </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Legacy Gym</p>
+        <div class="footer-col">
+            <h4>Links</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="athletes.html">Athleten</a>
         </div>
-    </footer>
-    <script src="script.js"></script>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form">
+                <input type="email" placeholder="deine@email.ch" required>
+                <button type="submit" class="btn">Anmelden</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Legacy Gym. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

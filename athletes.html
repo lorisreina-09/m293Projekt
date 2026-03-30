@@ -7,61 +7,81 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">LEGACY GYM</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="athletes.html" class="active">Athleten</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Unsere Elite Athleten</h1>
+<header>
+    <nav>
+        <div class="logo">LEGACY GYM</div>
+        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="athletes.html" class="active">Athleten</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="page-header">
+        <h1>Elite Athleten</h1>
         <p>Wir arbeiten nur mit den Besten der Fitness-Industrie zusammen.</p>
+    </div>
 
-        <div class="grid-container">
-            <!-- David Laid -->
-            <article class="card">
-                <img src="/Images/david-laid.webp" alt="David Laid" class="card-img">
-                <div class="card-content">
-                    <h2>David Laid</h2>
-                    <p>Die Ästhetik-Legende. Bekannt für seine unglaubliche Transformation und seinen einzigartigen Style.</p>
-                    <p><strong>Spezialität:</strong> Aesthetics & Deadlift</p>
-                </div>
-            </article>
+    <div class="grid">
+        <article class="card athlete-card">
+            <img src="/Images/david-laid.webp" alt="David Laid" class="card-img">
+            <div class="card-body">
+                <span class="athlete-specialty">Aesthetics & Deadlift</span>
+                <h2>David Laid</h2>
+                <p>Die Ästhetik-Legende. Bekannt für seine unglaubliche Transformation und seinen einzigartigen Style.</p>
+            </div>
+        </article>
 
-            <!-- Sam Sulek -->
-            <article class="card">
-                <img src="/Images/Sam-Sulek-2.jpg" alt="Sam Sulek" class="card-img">
-                <div class="card-content">
-                    <h2>Sam Sulek</h2>
-                    <p>Kein Gerede, nur schweres Training. Sam bringt Old School Bodybuilding zurück.</p>
-                    <p><strong>Spezialität:</strong> Heavy Lifting & Bulk</p>
-                </div>
-            </article>
+        <article class="card athlete-card">
+            <img src="/Images/Sam-Sulek-2.jpg" alt="Sam Sulek" class="card-img">
+            <div class="card-body">
+                <span class="athlete-specialty">Heavy Lifting & Bulk</span>
+                <h2>Sam Sulek</h2>
+                <p>Kein Gerede, nur schweres Training. Sam bringt Old-School-Bodybuilding zurück.</p>
+            </div>
+        </article>
 
-            <!-- Chris Bumstead -->
-            <article class="card">
-                <img src="/Images/chris-bumstead.jpg" alt="Chris Bumstead" class="card-img">
-                <div class="card-content">
-                    <h2>Chris Bumstead</h2>
-                    <p>5x Mr. Olympia Classic Physique. Der König der modernen Ästhetik.</p>
-                    <p><strong>Spezialität:</strong> Classic Physique</p>
-                </div>
-            </article>
+        <article class="card athlete-card">
+            <img src="/Images/chris-bumstead.jpg" alt="Chris Bumstead" class="card-img">
+            <div class="card-body">
+                <span class="athlete-specialty">Classic Physique</span>
+                <h2>Chris Bumstead</h2>
+                <p>5x Mr. Olympia Classic Physique. Der König der modernen Ästhetik.</p>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">LEGACY GYM</div>
+            <p>Equipment und Kleidung für echte Legenden.</p>
         </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Legacy Gym</p>
+        <div class="footer-col">
+            <h4>Links</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Kontakt</a>
         </div>
-    </footer>
-    <script src="script.js"></script>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form">
+                <input type="email" placeholder="deine@email.ch" required>
+                <button type="submit" class="btn">Anmelden</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Legacy Gym. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

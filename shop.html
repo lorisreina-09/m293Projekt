@@ -7,140 +7,151 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">LEGACY GYM</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html" class="active">Shop</a></li>
-                <li><a href="athletes.html">Athleten</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+<header>
+    <nav>
+        <div class="logo">LEGACY GYM</div>
+        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="athletes.html">Athleten</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="page-header">
         <h1>Alle Produkte</h1>
-        
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">Alle</button>
-            <button class="filter-btn" data-filter="clothing">Kleidung</button>
-            <button class="filter-btn" data-filter="supplements">Supplements</button>
-            <button class="filter-btn" data-filter="equipment">Equipment</button>
+        <p>Premium Equipment, Kleidung und Supplements für deinen Fortschritt.</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="clothing">Kleidung</button>
+        <button class="filter-btn" data-filter="supplements">Supplements</button>
+        <button class="filter-btn" data-filter="equipment">Equipment</button>
+    </div>
+
+    <div class="grid">
+        <article class="card product-card" data-category="clothing">
+            <img src="/Images/OversizedShirt.webp" alt="Oversized Pump Cover" class="card-img">
+            <div class="card-body">
+                <h3>Oversized Pump Cover</h3>
+                <span class="price">CHF 34.90</span>
+                <a href="product.html?id=1" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="supplements">
+            <img src="/Images/Creatine.webp" alt="Pure Creatine" class="card-img">
+            <div class="card-body">
+                <h3>Pure Creatine Monohydrate</h3>
+                <span class="price">CHF 24.90</span>
+                <a href="product.html?id=2" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="equipment">
+            <img src="/Images/Zughilfe.webp" alt="Lifting Straps" class="card-img">
+            <div class="card-body">
+                <h3>Pro Lifting Straps</h3>
+                <span class="price">CHF 14.90</span>
+                <a href="product.html?id=3" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="supplements">
+            <img src="/Images/preworkout.jpg" alt="Pre-Workout" class="card-img">
+            <div class="card-body">
+                <h3>CBUM Pre-Workout</h3>
+                <span class="price">CHF 49.90</span>
+                <a href="product.html?id=4" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="equipment">
+            <img src="/Images/GymGürtel.jpg" alt="Gym Belt" class="card-img">
+            <div class="card-body">
+                <h3>Leder Gewichthebergürtel</h3>
+                <span class="price">CHF 59.90</span>
+                <a href="product.html?id=5" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="clothing">
+            <img src="/Images/Hoodie.webp" alt="Gym Hoodie" class="card-img">
+            <div class="card-body">
+                <h3>Gym Hoodie Black</h3>
+                <span class="price">CHF 59.90</span>
+                <a href="product.html?id=6" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="supplements">
+            <img src="/Images/Whey.webp" alt="Whey Isolate" class="card-img">
+            <div class="card-body">
+                <h3>Whey Isolate</h3>
+                <span class="price">CHF 39.90</span>
+                <a href="product.html?id=7" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="clothing">
+            <img src="/Images/Shorts.webp" alt="Squat Shorts" class="card-img">
+            <div class="card-body">
+                <h3>Squat Shorts</h3>
+                <span class="price">CHF 29.90</span>
+                <a href="product.html?id=8" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="equipment">
+            <img src="/Images/knieband.jpg" alt="Kniebandagen" class="card-img">
+            <div class="card-body">
+                <h3>Kniebandagen (Sleeves)</h3>
+                <span class="price">CHF 34.90</span>
+                <a href="product.html?id=9" class="btn">Details</a>
+            </div>
+        </article>
+
+        <article class="card product-card" data-category="equipment">
+            <img src="/Images/bottle.jpg" alt="Shaker Bottle" class="card-img">
+            <div class="card-body">
+                <h3>Shaker Bottle 700ml</h3>
+                <span class="price">CHF 9.90</span>
+                <a href="product.html?id=10" class="btn">Details</a>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">LEGACY GYM</div>
+            <p>Equipment und Kleidung für echte Legenden.</p>
         </div>
-
-        <div class="grid-container">
-            
-            <!-- 1. Oversized Shirt -->
-            <article class="card product-card" data-category="clothing">
-                <img src="/Images/OversizedShirt.webp" alt="Tee" class="card-img">
-                <div class="card-content">
-                    <h3>Oversized Pump Cover</h3>
-                    <span class="price">CHF 34.90</span>
-                    <!-- WICHTIG: Link mit ID -->
-                    <a href="product.html?id=1" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 2. Creatine -->
-            <article class="card product-card" data-category="supplements">
-                <img src="/Images/Creatine.webp" alt="Creatine" class="card-img">
-                <div class="card-content">
-                    <h3>Pure Creatine</h3>
-                    <span class="price">CHF 24.90</span>
-                    <a href="product.html?id=2" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 3. Straps -->
-            <article class="card product-card" data-category="equipment">
-                <img src="/Images/Zughilfe.webp" alt="Straps" class="card-img">
-                <div class="card-content">
-                    <h3>Pro Lifting Straps</h3>
-                    <span class="price">CHF 14.90</span>
-                    <a href="product.html?id=3" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 4. Pre-Workout -->
-            <article class="card product-card" data-category="supplements">
-                <img src="/Images/preworkout.jpg" alt="Pre" class="card-img">
-                <div class="card-content">
-                    <h3>CBUM Pre-Workout</h3>
-                    <span class="price">CHF 49.90</span>
-                    <a href="product.html?id=4" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 5. Belt -->
-            <article class="card product-card" data-category="equipment">
-                <img src="/Images/GymGürtel.jpg" alt="Belt" class="card-img">
-                <div class="card-content">
-                    <h3>Gym Belt</h3>
-                    <span class="price">CHF 59.90</span>
-                    <a href="product.html?id=5" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 6. Hoodie -->
-            <article class="card product-card" data-category="clothing">
-                <img src="/Images/Hoodie.webp" alt="Hoodie" class="card-img">
-                <div class="card-content">
-                    <h3>Gym Hoodie Black</h3>
-                    <span class="price">CHF 59.90</span>
-                    <a href="product.html?id=6" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 7. Whey -->
-            <article class="card product-card" data-category="supplements">
-                <img src="/Images/Whey.webp" alt="Whey" class="card-img">
-                <div class="card-content">
-                    <h3>Whey Isolate</h3>
-                    <span class="price">CHF 39.90</span>
-                    <a href="product.html?id=7" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 8. Shorts -->
-            <article class="card product-card" data-category="clothing">
-                <img src="/Images/Shorts.webp" alt="Shorts" class="card-img">
-                <div class="card-content">
-                    <h3>Squat Shorts</h3>
-                    <span class="price">CHF 29.90</span>
-                    <a href="product.html?id=8" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 9. Sleeves -->
-            <article class="card product-card" data-category="equipment">
-                <img src="/Images/knieband.jpg" alt="Sleeves" class="card-img">
-                <div class="card-content">
-                    <h3>Kniebandagen</h3>
-                    <span class="price">CHF 34.90</span>
-                    <a href="product.html?id=9" class="btn">Details</a>
-                </div>
-            </article>
-
-            <!-- 10. Shaker -->
-            <article class="card product-card" data-category="equipment">
-                <img src="/Images/bottle.jpg" alt="Shaker" class="card-img">
-                <div class="card-content">
-                    <h3>Shaker Bottle</h3>
-                    <span class="price">CHF 9.90</span>
-                    <a href="product.html?id=10" class="btn">Details</a>
-                </div>
-            </article>
-
+        <div class="footer-col">
+            <h4>Links</h4>
+            <a href="index.html">Home</a>
+            <a href="athletes.html">Athleten</a>
+            <a href="contact.html">Kontakt</a>
         </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Legacy Gym</p>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form">
+                <input type="email" placeholder="deine@email.ch" required>
+                <button type="submit" class="btn">Anmelden</button>
+            </form>
         </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Legacy Gym. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

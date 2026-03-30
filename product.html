@@ -5,85 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEGACY GYM | Produktdetails</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .product-detail-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-        }
-        @media(max-width: 768px) { .product-detail-grid { grid-template-columns: 1fr; } }
-        .video-container { margin-top: 2rem; }
-        iframe { width: 100%; aspect-ratio: 16/9; border: none; }
-    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">LEGACY GYM</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="athletes.html">Athleten</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+
+<header>
+    <nav>
+        <div class="logo">LEGACY GYM</div>
+        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="athletes.html">Athleten</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="shop.html" style="display:inline-flex;align-items:center;gap:0.5rem;color:var(--muted);font-size:0.85rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:2rem;">← Zurück zum Shop</a>
+
+    <div class="product-detail">
+        <!-- Bild & Video -->
+        <div>
+            <img id="detail-img" src="" alt="Produkt">
+            <div class="video-container">
+                <h3>Produkt Video</h3>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1" title="Produkt Video" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Info & Bestellung -->
+        <div>
+            <h1 id="detail-title">Lade Produkt...</h1>
+            <p id="detail-price" class="price" style="font-size:1.8rem;">—</p>
+            <p id="detail-desc" style="color:var(--muted);margin-bottom:1.5rem;">Bitte wähle ein Produkt aus dem Shop.</p>
+
+            <ul class="product-features">
+                <li>Premium Qualität</li>
+                <li>Legacy Gym Approved</li>
+                <li>Schneller Versand (2–4 Werktage)</li>
+                <li>30 Tage Rückgaberecht</li>
             </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div class="product-detail-grid">
-            <!-- Linke Seite: Bild & Video -->
-            <div>
-                <!-- WICHTIG: ID hinzugefügt -->
-                <img id="detail-img" src="" alt="Produkt Detail" style="width:100%; border: 1px solid #333;">
-                
-                <div class="video-container">
-                    <h3>Produkt Video</h3>
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?mute=1" title="Product Video"></iframe>
+            <hr>
+
+            <h3 style="margin-bottom:1rem;">Jetzt bestellen</h3>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="amount">Menge</label>
+                    <input type="number" id="amount" value="1" min="1" max="10" style="width:90px;">
                 </div>
-            </div>
-
-            <!-- Rechte Seite: Info & Bestellung -->
-            <div>
-                <!-- WICHTIG: IDs hinzugefügt und Text entfernt -->
-                <h1 id="detail-title">Lade Produkt...</h1>
-                <p id="detail-price" class="price" style="font-size: 2rem; margin-bottom: 1rem;">--.--</p>
-                
-                <p id="detail-desc">Bitte wähle ein Produkt aus dem Shop.</p>
-                
-                <ul style="margin: 1rem 0 2rem 1rem; list-style: disc;">
-                    <li>Premium Qualität</li>
-                    <li>Legacy Gym Approved</li>
-                    <li>Schneller Versand</li>
-                </ul>
-
-                <hr style="border-color: #333; margin-bottom: 2rem;">
-
-                <h3>Jetzt Bestellen</h3>
-                <form id="order-form">
-                    <div class="form-group">
-                        <label for="amount">Menge</label>
-                        <input type="number" id="amount" value="1" min="1" max="10" style="width: 80px;">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Dein Name</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Lieferadresse</label>
-                        <textarea id="address" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">Kostenpflichtig bestellen</button>
-                </form>
-            </div>
+                <div class="form-group">
+                    <label for="name">Dein Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Lieferadresse</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width:100%;">Kostenpflichtig bestellen</button>
+            </form>
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Legacy Gym</p>
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="logo">LEGACY GYM</div>
+            <p>Equipment und Kleidung für echte Legenden.</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+        <div class="footer-col">
+            <h4>Links</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="athletes.html">Athleten</a>
+        </div>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <form class="newsletter-form">
+                <input type="email" placeholder="deine@email.ch" required>
+                <button type="submit" class="btn">Anmelden</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Legacy Gym. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- Produktdaten (kein JS-Overhead in script.js) -->
+<script type="application/json" id="products-data">
+[
+  {"id":1,"name":"Oversized Pump Cover","price":"34.90","image":"/Images/OversizedShirt.webp","desc":"Das ultimative Shirt für dein Training. Versteckt den Pump bis zum Reveal. 100% Baumwolle, schwerer Stoff."},
+  {"id":2,"name":"Pure Creatine Monohydrate","price":"24.90","image":"/Images/Creatine.webp","desc":"Erhöhe deine körperliche Leistung bei Schnellkrafttraining. 100% reines Creapure ohne Zusatzstoffe."},
+  {"id":3,"name":"Pro Lifting Straps","price":"14.90","image":"/Images/Zughilfe.webp","desc":"Lass nicht zu, dass deine Griffkraft dein Rückentraining limitiert. Robuste Baumwolle mit Neopren-Polsterung."},
+  {"id":4,"name":"CBUM Pre-Workout","price":"49.90","image":"/Images/preworkout.jpg","desc":"Maximaler Fokus und Pump. Entwickelt von Chris Bumstead. Geschmack: Blackberry Lemonade."},
+  {"id":5,"name":"Leder Gewichthebergürtel","price":"59.90","image":"/Images/GymGürtel.jpg","desc":"Schütze deinen unteren Rücken bei schweren Squats und Deadlifts. 10mm dickes Echtleder."},
+  {"id":6,"name":"Gym Hoodie Black","price":"59.90","image":"/Images/Hoodie.webp","desc":"Perfekt für den Weg zum Gym oder das Warm-up. Weiches Innenfleece und athletischer Schnitt."},
+  {"id":7,"name":"Whey Isolate","price":"39.90","image":"/Images/Whey.webp","desc":"Schnelle Proteinversorgung nach dem Training. Wenig Fett, wenig Zucker, maximaler Muskelaufbau."},
+  {"id":8,"name":"Squat Shorts","price":"29.90","image":"/Images/Shorts.webp","desc":"Kurze Hosen für Beinfreiheit beim Beintraining. Zeig, wofür du gearbeitet hast."},
+  {"id":9,"name":"Kniebandagen (Sleeves)","price":"34.90","image":"/Images/knieband.jpg","desc":"Wärme und Kompression für deine Kniegelenke. 7mm Neopren für maximale Stabilität."},
+  {"id":10,"name":"Shaker Bottle 700ml","price":"9.90","image":"/Images/bottle.jpg","desc":"Auslaufsicherer Shaker mit Sieb für klumpenfreie Shakes. BPA-frei."}
+]
+</script>
+
+<script src="script.js"></script>
 </body>
 </html>
