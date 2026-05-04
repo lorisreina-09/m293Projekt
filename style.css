@@ -241,6 +241,30 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     padding: 8rem 2rem 6rem;
     width: 100%;
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.hero-text { flex: 1; min-width: 0; }
+.hero-athlete {
+    flex: 0 0 420px;
+    align-self: stretch;
+    position: relative;
+}
+.hero-athlete img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%),
+                linear-gradient(to left, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%),
+                        linear-gradient(to left, black 60%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
 }
 
 .hero-eyebrow {
@@ -940,7 +964,8 @@ footer {
     .hero { min-height: 85vh; }
     .hero::after { display: none; }
     .hero h1 { font-size: clamp(3.5rem, 11vw, 5.5rem); }
-    .hero-inner { padding: 6rem 2rem 4rem; }
+    .hero-inner { padding: 6rem 2rem 4rem; flex-direction: column; align-items: flex-start; }
+    .hero-athlete { display: none; }
 
     .section-wrap { padding: 3.5rem 1.5rem; }
     .page-header { padding: 3rem 1.5rem 2rem; }
