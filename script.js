@@ -41,6 +41,7 @@ if (location.pathname.includes('product.html')) {
         const p = JSON.parse(dataEl.textContent).find(x => x.id == id);
         if (p) {
             document.getElementById('detail-img').src = p.image;
+            document.getElementById('detail-video').src = 'https://www.youtube.com/embed/' + p.videoId + '?mute=1';
             document.getElementById('detail-title').textContent = p.name;
             document.getElementById('detail-price').textContent = 'CHF ' + p.price;
             document.getElementById('detail-desc').textContent = p.desc;

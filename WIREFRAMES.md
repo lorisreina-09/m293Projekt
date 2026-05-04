@@ -149,6 +149,43 @@ index.html (Startseite)
 └─────────────────────┘
 ```
 
+### Athleten (athletes.html) – Mobile
+
+```
+┌─────────────────────┐
+│  ☰   LEGACY GYM     │
+├─────────────────────┤
+│  Unser Team         │  ← Eyebrow
+│  Elite Athleten     │
+│  Wir arbeiten nur   │
+│  mit den Besten...  │
+├─────────────────────┤
+│  [Athletenbild]     │
+│  Aesthetics &       │  ← Specialty-Label
+│  Deadlift           │
+│  David Laid         │
+│  Die Ästhetik-      │
+│  Legende...         │
+├─────────────────────┤
+│  [Athletenbild]     │
+│  Heavy Lifting &    │
+│  Bulk               │
+│  Sam Sulek          │
+│  Kein Gerede, nur   │
+│  schweres Training  │
+├─────────────────────┤
+│  [Athletenbild]     │
+│  Classic Physique   │
+│  Chris Bumstead     │
+│  5x Mr. Olympia...  │
+├─────────────────────┤
+│  LEGACY GYM         │  ← Footer
+│  Newsletter E-Mail  │
+│  [Anmelden]         │
+│  © 2026 Legacy Gym  │
+└─────────────────────┘
+```
+
 ---
 
 ## Tablet (480px – 768px)
@@ -200,6 +237,91 @@ index.html (Startseite)
 │  │ [Detail] │  │ [Detail] │     │
 │  └──────────┘  └──────────┘     │
 │  ...                             │
+└──────────────────────────────────┘
+```
+
+### Produktdetail (product.html) – Tablet
+
+```
+┌──────────────────────────────────┐
+│  ☰            LEGACY GYM         │
+├──────────────────────────────────┤
+│  ← Zurück zum Shop               │
+├──────────────────────────────────┤
+│  ┌───────────────┐               │
+│  │               │               │
+│  │ [Produktbild] │               │  ← Bild oben, volle Breite
+│  │               │               │
+│  └───────────────┘               │
+│  ┌───────────────┐               │
+│  │ [YouTube]     │               │  ← Video darunter, volle Breite
+│  └───────────────┘               │
+├──────────────────────────────────┤
+│  PRODUKTNAME                     │
+│  CHF XX.XX                       │
+│  Beschreibung...                 │
+│  ✓ Premium Qualität              │
+│  ✓ Legacy Approved               │
+│  ✓ Schneller Versand             │
+│  ✓ 30 Tage Rückgabe              │
+├──────────────────────────────────┤
+│  Jetzt bestellen                 │
+│  Menge: [1]                      │
+│  Name: [____________________]    │
+│  Adresse: [_________________]    │
+│  [KOSTENPFLICHTIG BESTELLEN]     │
+└──────────────────────────────────┘
+```
+
+### Kontakt (contact.html) – Tablet
+
+```
+┌──────────────────────────────────┐
+│  ☰            LEGACY GYM         │
+├──────────────────────────────────┤
+│  Kontakt                         │
+├──────────────────────────────────┤
+│  ┌─────────────────┐             │
+│  │ Schreib uns     │             │  ← Formular, volle Breite
+│  │ Name: [_______] │             │
+│  │ E-Mail:[_______]│             │
+│  │ Betreff: [▼   ] │             │
+│  │ Nachricht:      │             │
+│  │ [_____________] │             │
+│  │ [_____________] │             │
+│  │ [ABSENDEN]      │             │
+│  └─────────────────┘             │
+│  ┌──────────┐  ┌──────────┐     │
+│  │| Support │  │| Standort│     │  ← 2 Spalten darunter
+│  │| support@│  │| Zürich  │     │
+│  │| Mo-Fr   │  │| Team →  │     │
+│  └──────────┘  └──────────┘     │
+└──────────────────────────────────┘
+```
+
+### Athleten (athletes.html) – Tablet
+
+```
+┌──────────────────────────────────┐
+│  ☰            LEGACY GYM         │
+├──────────────────────────────────┤
+│  Unser Team                      │
+│  Elite Athleten                  │
+│  Wir arbeiten nur mit den Besten │
+├──────────────────────────────────┤
+│  ┌──────────┐  ┌──────────┐     │
+│  │  [Bild]  │  │  [Bild]  │     │  ← 2 Spalten
+│  │ Aesthet. │  │ Heavy L. │     │
+│  │ David    │  │ Sam      │     │
+│  │ Laid     │  │ Sulek    │     │
+│  │ Die Äst. │  │ Kein Ger.│     │
+│  └──────────┘  └──────────┘     │
+│         ┌──────────┐            │
+│         │  [Bild]  │            │
+│         │ Classic  │            │
+│         │ Chris    │            │  ← 3. Karte zentriert
+│         │ Bumstead │            │
+│         └──────────┘            │
 └──────────────────────────────────┘
 ```
 
@@ -301,5 +423,34 @@ index.html (Startseite)
 │  │ [_______________________]  │  │ | Team            │ │
 │  │ [ABSENDEN]                 │  │ | → Athleten      │ │
 │  └────────────────────────────┘  └───────────────────┘ │
+└────────────────────────────────────────────────────────┘
+```
+
+### Athleten – Desktop
+
+```
+┌────────────────────────────────────────────────────────┐
+│  LEGACY GYM        Home  Shop  Athleten  Kontakt        │
+├────────────────────────────────────────────────────────┤
+│  Unser Team                                            │
+│  Elite Athleten                                        │
+│  Wir arbeiten nur mit den Besten der Fitness-Industrie │
+├────────────────────────────────────────────────────────┤
+│  ┌──────────────┐ ┌──────────────┐ ┌──────────────┐   │
+│  │              │ │              │ │              │   │
+│  │ [Athletenbild│ │ [Athletenbild│ │ [Athletenbild│   │  ← 3 Spalten
+│  │              │ │              │ │              │   │
+│  │ Aesthetics & │ │ Heavy Lifting│ │ Classic      │   │
+│  │ Deadlift     │ │ & Bulk       │ │ Physique     │   │
+│  │ David Laid   │ │ Sam Sulek    │ │ Chris Bumst. │   │
+│  │ Die Ästhetik │ │ Kein Gerede, │ │ 5x Mr. Olym. │   │
+│  │ Legende...   │ │ nur schweres │ │ Der König... │   │
+│  └──────────────┘ └──────────────┘ └──────────────┘   │
+├────────────────────────────────────────────────────────┤
+│  LEGACY GYM              Links       Newsletter        │
+│  Equipment für Legenden. Shop        [email@__]        │  ← Footer
+│                          Athleten    [ANMELDEN]        │
+│                          Kontakt                       │
+│                    © 2026 Legacy Gym                   │
 └────────────────────────────────────────────────────────┘
 ```
